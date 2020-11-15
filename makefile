@@ -1,13 +1,4 @@
-CC=gcc
-FLAG=-Wall
-AR=ar
-OBJECT=basicMath.o power.o
-fPIC=-fPIC
-g= -g
 all: mains maind
-
-
-
 mains: main.o libmyMath.a
 	gcc -wall -g -o mains main.o libmyMath.a
 maind: main.o libmyMath.so
